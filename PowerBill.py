@@ -66,9 +66,9 @@ Grnd_Used_ratio=((Grnd_flr_units+Motor_portion)/Total_Units)
 First_Used_ratio=((first_flr_units+Motor_portion)/Total_Units)
 second_Used_ratio=((second_flr_units+Motor_portion)/Total_Units)
 
-print("Ground used ratio -> charges:",Grnd_Used_ratio,Grnd_Used_ratio*Vary_charges)
-print("First_Used_ratio -> charges:",First_Used_ratio,First_Used_ratio*Vary_charges)
-print("second_Used_ratio -> charges:",second_Used_ratio,second_Used_ratio*Vary_charges)
+print("Ground used ratio :: variable charges:",Grnd_Used_ratio,Grnd_Used_ratio*Vary_charges)
+print("First_Used_ratio :: variable charges:",First_Used_ratio,First_Used_ratio*Vary_charges)
+print("second_Used_ratio :: variable charges:",second_Used_ratio,second_Used_ratio*Vary_charges)
 
 GrndFlr_bill=(Grnd_Used_ratio*Vary_charges)+(unit_price*(Grnd_flr_units+Motor_portion)+(Fixed_charges/3.0)+Online_charge*Grnd_Used_ratio)
 FirstFlr_bill=(First_Used_ratio*Vary_charges)+(unit_price*(first_flr_units+Motor_portion)+(Fixed_charges/3.0)+Online_charge*First_Used_ratio)
